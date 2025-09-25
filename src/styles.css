@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'BoosterNextFY';
+  src: url('./fonts/BoosterNextFY-Regular.woff2') format('woff2'),
+       url('./fonts/BoosterNextFY-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BoosterNextFY'; 
+  src: url('./fonts/BoosterNextFY-Bold.woff2') format('woff2'),
+       url('./fonts/BoosterNextFY-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: 'BoosterNextFY', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+  color: #ffffff;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  background-attachment: fixed, fixed;
+  background-image: url('../public/bg-deco-left.svg'), url('../public/bg-deco-right.svg');
+  background-position-x: 220px, 100%;
+  background-position-y: 100%, 0px;
+  background-size: 150px auto, 250px auto;
+  background-repeat: no-repeat, no-repeat;
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #3a3d57;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffff;
+  margin-top: 0;
+}
+
+.loading-message, .error-message, .not-found-message {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #e91e63; 
+}
+.loading-message { color: #2196f3; }
